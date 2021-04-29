@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
+  
+</head>
+
+<script>
+  var text1 = ["Diary & Journal","Write your own", "Personal notes on"];
+  var text2 = ["- private writing","Private diary!",  "Web and Android!"];
+  var counter1 = 0;
+  var counter2 = 0;
+  var inst = setInterval(change, 5000);
+  function change(){
+  document.getElementById("looph1").innerHTML = text1[counter1];
+  document.getElementById("looph2").innerHTML = text2[counter2];
+  counter1++;
+  counter2++;
+
+   if (counter1 >= text1.length) {
+      counter1 = 0;
+      // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+    }
+    if (counter2 >= text2.length) {
+      counter2 = 0;
+      // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+    }
+  }
+  </script>
+
+<body>
+  <!-- Header-->
+  <section id="header">
+    <div id="container">
+        <div id="nav_bar">
+            <div id="logo">
+              <img src="./img/Today-logo.png" alt="">
+            </div>
+            <nav id="hamburger">
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+              </label>
+                <ul>
+                    <li><a class="active" href="#"><b>Home</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">SCREENS</a></li>
+                    <li><a href="#">GET APP</a></li>
+                    <li><a href="#">SUPPORT</a></li>
+                    <li><a href="#">LOGIN</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- End Header-->
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div class="image">
+        <img src="img/heroimg.svg" class="image" alt="" />
+      </div>
+      <div class="herop">
+        <h1 id="looph1" style="color: #D4D821;">Diary & Journal</h1>
+        <h1 id="looph2" style="color: rgb(49, 85, 55);">private writing </h1>
+        <a href="#" type="button" class="cta"> LEARN MORE</a>
+		    <a href="#" type="button" class="cta"> DOWNLOAD</a>
+        <a href="#" type="button" class="cta"> GET STARTED</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <div class="row">
+
+    <div class="three-col">
+        <div class="iconColWrap">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <h2> Password protection</h2>
+            <p>Protect your entries with password.</p>
+        </div>
+    </div>
+
+    <div class="three-col">
+        <div class="iconColWrap">
+            <i class="fa fa-smile-o" aria-hidden="true"></i>
+            <h2>Emojis</h2>
+            <p>Decorate notes with Emojis.</p>
+        </div>
+    </div>
+
+    <div class="three-col">
+        <div class="iconColWrap">
+            <i class="fa fa-adjust" aria-hidden="true"></i>
+            <h2>Personal Colors</h2>
+            <p>Have your diary in your favorite color.</p>
+        </div>
+    </div>
+
+    <div class="three-col last-col">
+        <div class="iconColWrap">
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            <h2>Easy to use</h2>
+            <p>It's extremly easy to use!</p>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+</div>
+
+</body>
+</html>
