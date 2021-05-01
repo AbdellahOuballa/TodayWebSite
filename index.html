@@ -38,27 +38,27 @@
 <body>
   <!-- Header-->
   <section id="header">
-    <div id="container">
-        <div id="nav_bar">
-            <div id="logo">
-              <img src="./img/Today-logo.png" alt="">
-            </div>
-            <nav id="hamburger">
-              <input type="checkbox" id="check">
-              <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-              </label>
-                <ul>
-                    <li><a class="active" href="#"><b>Home</a></li>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">SCREENS</a></li>
-                    <li><a href="#">GET APP</a></li>
-                    <li><a href="#">SUPPORT</a></li>
-                    <li><a href="#">LOGIN</b></a></li>
-                </ul>
-            </div>
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="logo">
+          <img id="logo" src="./img/Today-logo.png" alt="">
         </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+              <ul>
+                <li><a href="#" class="active" data-after="HOME">HOME</a></li>
+                <li><a href="#" data-after="FEATURES">FEATURES</a></li>
+                <li><a href="#" data-after="SCREENS">SCREENS</a></li>
+                <li><a href="#" data-after="GETAPP">GET APP</a></li>
+                <li><a href="#" data-after="SUPPORT">SUPPORT</a></li>
+                <li><a href="#" data-after="LOGIN">LOGIN</a></li>
+              </ul>
+          </div>
+      </div>
     </div>
+        
 </section>
   <!-- End Header-->
 
@@ -115,6 +115,6 @@
 
     <div class="clear"></div>
 </div>
-
+<script src="./app.js"></script>
 </body>
 </html>
