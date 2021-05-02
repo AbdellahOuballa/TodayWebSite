@@ -12,28 +12,7 @@
   
 </head>
 
-<script>
-  var text1 = ["Diary & Journal","Write your own", "Personal notes on"];
-  var text2 = ["- private writing","Private diary!",  "Web and Android!"];
-  var counter1 = 0;
-  var counter2 = 0;
-  var inst = setInterval(change, 5000);
-  function change(){
-  document.getElementById("looph1").innerHTML = text1[counter1];
-  document.getElementById("looph2").innerHTML = text2[counter2];
-  counter1++;
-  counter2++;
 
-   if (counter1 >= text1.length) {
-      counter1 = 0;
-      // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
-    }
-    if (counter2 >= text2.length) {
-      counter2 = 0;
-      // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
-    }
-  }
-  </script>
 
 <body>
   <!-- Header-->
@@ -48,9 +27,9 @@
               <div class="bar"></div>
             </div>
               <ul>
-                <li><a href="#" class="active" data-after="HOME">HOME</a></li>
-                <li><a href="#" data-after="FEATURES">FEATURES</a></li>
-                <li><a href="#" data-after="SCREENS">SCREENS</a></li>
+                <li><a href="#hero" data-after="HOME">HOME</a></li>
+                <li><a href="#features" data-after="FEATURES">FEATURES</a></li>
+                <li><a href="#screens" data-after="SCREENS">SCREENS</a></li>
                 <li><a href="#" data-after="GETAPP">GET APP</a></li>
                 <li><a href="#" data-after="SUPPORT">SUPPORT</a></li>
                 <li><a href="#" data-after="LOGIN">LOGIN</a></li>
@@ -71,7 +50,7 @@
       <div class="herop">
         <h1 id="looph1" style="color: #D4D821;">Diary & Journal</h1>
         <h1 id="looph2" style="color: rgb(49, 85, 55);">private writing </h1>
-        <a href="#" type="button" class="cta"> LEARN MORE</a>
+        <a href="#features" type="button" class="cta"> LEARN MORE</a>
 		    <a href="#" type="button" class="cta"> DOWNLOAD</a>
         <a href="#" type="button" class="cta"> GET STARTED</a>
       </div>
@@ -79,8 +58,10 @@
   </section>
   <!-- End Hero Section  -->
 
+<!--FEATURES Section-->
+<section id="features">
   <div class="row">
-
+    <h1>FEATURES</h1>
     <div class="three-col">
         <div class="iconColWrap">
             <i class="fa fa-lock" aria-hidden="true"></i>
@@ -114,7 +95,23 @@
     </div>
 
     <div class="clear"></div>
+  </div>
+</section> 
+<!--End Featurs Section-->
+
+<!--SCREENS Section-->
+<section id="screens">
+  
+<div class="screens container">
+  <h1>SCREENS</h1>
+  <div class="sc">Screen1</div>
+  <div class="sc">Screen2</div>
+  <div class="sc">Screen3</div>
+  <div class="sc">Screen4</div>
 </div>
+</section>
+<!--End SCREENS Section-->
+
 <script src="./app.js"></script>
 </body>
 </html>
