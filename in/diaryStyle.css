@@ -27,21 +27,56 @@ html{
     }
     #header .nav-bar{
         width: 100vw;
-        height: auto;
-        margin: 0;
+        height: 60px;
+        margin: 0 auto;
         padding: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #d4D821;
     }
+    #header .nav-list ul{
+        list-style: none;
+    }
+    #header .nav-list ul li{
+        background-color: #D4D821;
+        width: 170px;
+        height: 50px;
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        position: relative;
+        flex-direction: column;
+        z-index: 1;
+        transition: .5s ease left;
+    }
     #header .nav-bar .nav-list a{
         text-decoration: none;
-        margin-right: 50px;
-        padding: 20px;
         font-size: 2rem;
         color: rgb(49, 85, 55);
     }
+    #header .nav-list ul ul{
+        display: none;
+        border: 2px solid rgb(49, 85, 55) ;
+        margin: 0;
+    }
+    #header .nav-list ul ul li{
+        position: relative;
+        margin: 0;
+        right: 40px;
+    }
+    #header .nav-list ul li:hover ul{
+        display: block;
+    }
+    #header .nav-list ul li a:hover,
+    #header .nav-list ul li a:hover span
+    {
+        color: white;
+    }
+    #header .nav-list ul ul li:hover{
+        border: 1px solid rgb(49, 85, 55) ;
+    }
+
   /*End header style*/
 
 
