@@ -10,7 +10,7 @@ html {
 	scroll-behavior:smooth;
 }
 
-.container {
+#hero .container {
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
@@ -333,27 +333,37 @@ h1{
 	padding: 0;
 	margin: 0;
 	clip-path: polygon(100% 0, 100% 84%, 73% 94%, 0 100%, 0 21%, 0 0);
+    display: flex;
+	justify-content:center;
+	align-items: center;
+	background-color: #D4D821;
+	flex-direction: column;
 
 }
-.row{
+#features  .row{
 	width: 100vw;
 	height: 100vh;
 	display: flex;
 	justify-content:center;
 	align-items: center;
-	background-color: #D4D821;
+}
+#features .features{
+	margin-top: 90px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	
 }
 
-.iconColWrap{
+#features .iconColWrap{
 	display:flex;
 	justify-content:center;
 	align-items: center;
 	flex-direction:column;
 }
-.three-col{
+#features .three-col{
 	margin: 0px 50px;
-}
-.three-col i{
+}#features .three-col i{
 	width: 80px;
 	height: 80px;
 	margin: 30px ;
@@ -368,37 +378,33 @@ h1{
 	transition: .5s;
 
 }
-.three-col :hover i{
+#features .three-col :hover i{
 	
 	padding: 55px;
 	border: 3px solid rgb(255, 255, 255);
 	font-size: 3rem;
 	color: rgb(255, 255, 255);
 }
-.three-col h2,
-.three-col p
+#features .three-col h2,
+#features .three-col p
 {
 	color: rgb(49, 85, 55);
 
 }
-.three-col :hover h2,
-.three-col :hover p{
+#features .three-col :hover h2,
+#features .three-col :hover p{
 	color: white;
 }
-.row h1{
-	position: absolute;
-	top: 730px;
-	color: rgba(255, 255, 255, 0.527);
-}
+
 /*features media */
 @media (max-width:1200px){
-	.row{
+	#features .row{
 		display: flex;
 		flex-wrap: wrap;
 	}
 	
 
-	.three-col i{
+	#features .three-col i{
 		width: 60px;
 		height: 60px;
 		font-size: 2rem;
@@ -409,7 +415,7 @@ h1{
 }
 /*End features media*/
 
-
+/*End Features*/
   /*screens*/
 #screens {
 	width: 100vw;
@@ -446,3 +452,8 @@ h1{
 	align-items: center;
 }
   /*End screens*/
+
+
+
+
+
