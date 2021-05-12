@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="diaryStyle.css">
-    <title>Document</title>
+    <title>Today</title>
+    <link rel="stylesheet" href="in-style.css">
     <script
     src="https://kit.fontawesome.com/64d58efce2.js"
     crossorigin="anonymous"
   ></script>
-  <script src="./diary.js"></script>
 </head>
 <body>
     <!--header section-->
@@ -33,22 +32,21 @@
         </div>
     </section>
     <!--End header section-->
-
-    <!--Hero Section-->
+    <!--Hero section-->
     <section id="hero">
-    <div class="diary">
-        <div class="titel">
-            <input type="text" placeholder="Titel">
+        <div class="home">
+            <div class="herop">
+                    <img class="h-img" src="./img/Today-logo.png" alt="">
+                    <h1>Welcome to " Today " !</h1>
+                    <h3>Let's start writing your diary.</h3>
+                    <p>You are now ready to start writing about your day. </p>
+                    <a href="./Diary/diary.html" class="button">Start writing your diary</a>
+            </div>
+            <div class="herosvg">
+                <img src="./img/h-svg.svg" alt="">
+            </div>
         </div>
-        <!--textarea-->
-        <div class="area">
-            <textarea  id="diary" cols="100" rows="30" placeholder="How was your day?"></textarea>
-        </div>
-        <input class="submit" type="submit" value="Save">
-    </div>   
-        <!--End of textarea-->
     </section>
-    <!--End of hero section-->
-    
+    <!--End Hero section-->
 </body>
 </html>

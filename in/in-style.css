@@ -79,58 +79,66 @@ html{
 
   /*End header style*/
 
-
-  /*hero Section*/
-  
+  /*hero*/
   #hero{
       width: 100vw;
       height: 100vh;
+      margin: 0;
+      padding-top: 0;
   }
-  #hero .diary{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
+  #hero .h-img{
+      width: 400px;
   }
-  #hero .diary .titel input{
-      padding: 50px 0 20px 0;
-      font-size: 3rem;
-      color: rgb(49, 85, 55);
-      background:none;
-      border: none;
-      outline: none;
-  }
-  #hero .diary .area textarea{ 
+  #hero .home{
+      width: 100vw;
+      height: 100vh;
+      margin:0;
+      padding: 0;
       display: flex;
-      background: none;
-      border: 5px solid #d4D821;
-      width: 70%;
-      height: 300px;
-      padding: 30px 60px 30px 60px;
-      margin: auto;
+      justify-content: center;
+      align-items: center;
+  }
+  #hero .home .herop{
+      
+      padding: 50px;
+  }
+  h1,h3,p{
+      padding-left: 30px;
+  }
+  h1{
+      font-size: 3rem;
+      color: #d4D821;
+  }
+  h3{
       font-size: 2rem;
-      outline: none;
-      color: gray;
-  }
-  #hero .diary .submit{
-      width: 150px;
-      height: 40px;
-      margin: 20px;
-      background-color: transparent;
-      border: 3px solid #d4D821 ;
-      border-radius: 24px;
       color: rgb(49, 85, 55);
-      font-size: 1.5rem;
-      font-family:'Montserrat', sans-serif;
-      font-weight: 800;
+      padding-top: 30px;
   }
-  #hero .diary .submit:hover{
-      background-color:#d4D821;
-      cursor: pointer;
+  p{
+      font-size: 1rem;
+      color: rgb(70, 87, 73);
   }
-
-  /*End of hero section*/
-
-/*End Diary.html*/
+  .button{
+      text-decoration: none;
+    display: inline-block;
+	padding: 5px 10px;
+    margin: 0;
+	color: rgb(49, 85, 55);
+	background-color: transparent;
+	border: 2px solid #D4D821;
+	font-size: 1.5rem;
+	margin: 30px 10px;
+    border-radius: 24px;
+	cursor: pointer;
+	position: relative;
+    left: 80px;
+	overflow: hidden;
+  }
+  .button:hover{
+      color: white;
+      background-color: #d4d821;
+  }
+  #hero .home .herosvg img{
+      width: 300px;
+  }
+  /*End hero*/
